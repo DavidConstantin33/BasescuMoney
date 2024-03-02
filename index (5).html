@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Basescu Spend</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <h1>Cheltuie banii lui Basecu!</h1>
 <div class="head">
     <img src="basescu.jpg" alt="basescu">
-    <p class="money">14000000 RON</p>
+</div>
+<div class="stick">
+<p class="money">14000000 RON</p>
 </div>
 
+<div id="myModal">
+<h1 class="datorii"> Tocmai ai bagat Romania in datorii</h1>
+    <img src="base.jpg" alt="base">
+    <div class="modalBtns">
+    <button onclick="closeModal()">Bine Boss</button>
+    <button onclick="closeModal()">Jmen</button>
+    </div>
+</div>
+
+<div id="overlay"></div>
 
 <div class="game">
     <div class="item">
@@ -53,7 +68,7 @@
         <p>Apple Watch</p>
         <img src="ceas.jpg" alt="cola">
         <div style="margin-top: 1.5em">
-            <p class="price" style="display: inline">2100 Ron</p>
+            <p class="price" style="display: inline">2.100 Ron</p>
             <input class="inputCeas" type="number" value="1">
             <button class="buyCeas">Cumpara</button>
         </div>
@@ -63,7 +78,7 @@
         <p>Hanorac Gucii</p>
         <img src="hanorac.jpg" alt="cola">
         <div style="margin-top: 1.5em">
-            <p class="price" style="display: inline">4800 Ron</p>
+            <p class="price" style="display: inline">4.800 Ron</p>
             <input class="inputHanorac" type="number" value="1">
             <button class="buyHanorac">Cumpara</button>
         </div>
@@ -73,14 +88,49 @@
         <p>Iphone 15 Pro Max</p>
         <img src="iph.jpg" alt="cola">
         <div style="margin-top: 1.5em">
-            <p class="price" style="display: inline">8200 Ron</p>
+            <p class="price" style="display: inline">8.200 Ron</p>
             <input class="inputIph" type="number" value="1">
             <button class="buyIph">Cumpara</button>
         </div>
     </div>
 
+    <div class="item">
+        <p>Dacia Logan</p>
+        <img src="dacia.jpg" alt="cola">
+        <div style="margin-top: 1.5em">
+            <p class="price" style="display: inline">42.000 Ron</p>
+            <input class="inputDacia" type="number" value="1">
+            <button class="buyDacia">Cumpara</button>
+        </div>
     </div>
 
+    <div class="item">
+        <p>Ceas Rolex</p>
+        <img src="rolex.jpg" alt="cola">
+        <div style="margin-top: 1.5em">
+            <p class="price" style="display: inline">120.000 Ron</p>
+            <input class="inputRolex" type="number" value="1">
+            <button class="buyRolex">Cumpara</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <p>Apartament 2 Camere</p>
+        <img src="apartament.jpg" alt="cola">
+        <div style="margin-top: 1.5em">
+            <p class="price" style="display: inline">400.000 Ron</p>
+            <input class="inputApt" type="number" value="1">
+            <button class="buyApt">Cumpara</button>
+        </div>
+    </div>
+
+    </div>
+
+
+<footer>
+    <a href="https://github.com/DavidConstantin33">Git Hub</a>
+    <p>Constantin David @ 2024</p>
+</footer>
 <script src="js.js"></script>
 </body>
 </html>

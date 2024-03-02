@@ -5,6 +5,19 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        height: 100%;
+    }
+}
+
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2em;
 }
 
 .head {
@@ -12,9 +25,20 @@ body {
 }
 
 .head img {
-    width: 10em;
-    height: 10em;
+    width: 11em;
+    height: 11em;
     border-radius: 50%;
+}
+
+.stick {
+    top: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    position: sticky;
+    padding: 0.5em;
+    color: white;
+    background-color: black;
+    font-size: 1.5em;
 }
 
 .game {
@@ -41,6 +65,7 @@ body {
 
 .item input{
     width: 4em;
+    border-radius: 2px;
 }
 
 .item button {
@@ -50,5 +75,86 @@ body {
 
 .item button:hover {
     background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .game {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#myModal {
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5em;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    flex-direction: column;
+}
+
+#myModal h1 {
+    margin-bottom: 2em;
+}
+
+#myModal img {
+    width: 25em;
+    height: auto;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+#myModal button {
+    display: flex;
+    align-items: center;
+    margin: 0.5em;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+}
+
+#myModal button:hover {
+    background-color: black;
+    color: white;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+}
+
+.modalBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    padding: 2em;
+    margin-top: 5em;
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
     color: white;
 }
